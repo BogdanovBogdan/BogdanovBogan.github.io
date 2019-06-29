@@ -4,6 +4,7 @@ body{
 	color: #1d1d1d;
 }
 img{
+	max-width: 100%;
 	max-height: 100%;
 	height: auto;
 }
@@ -26,7 +27,7 @@ h4{
 .main-header{
 	background: url(../img/main1.jpg) center no-repeat;
 	background-size: cover;
-	height: 110vh;
+	height: 130vh;
 	min-width: 320px;
 	position: relative;
 }
@@ -153,7 +154,6 @@ h4{
 
 /* =============== section pogress ================ */
 
-
 .section-progress{
 	color: #fff;
 	background-color: #4A2D7F;
@@ -201,7 +201,6 @@ h4{
 }
 
 /* =============== section-design ================ */
-
 
 .section-design img{
 	height: 60px;
@@ -252,12 +251,30 @@ h4{
 	box-shadow: 0px 10px 40px -10px rgba(0,0,0,.5);
 	transition: .2s;
 }
-.tab-content img{
+/* .section-work .tab-content img{
 	width: 100%;
-}
+} */
 .section-work .nav{
 	margin-bottom: 30px;
 }
+
+/* =============== section-brand ================ */
+
+.section-brand{
+	background-color: #4A2D7F;
+	padding: 60px 0px;
+}
+.section-brand .brand-item:hover{
+	/* background-color: #41286A; */
+	box-shadow: 0 0 40px -10px rgba(0,0,0,.5);
+	transition: 0.5s;
+}
+.section-brand .transition{
+	transition: 1s;
+}
+
+
+
 /* Large Devices, Wide screens */
 @media only screen and (max-width: 1360px) {
 	.main-header-text {
@@ -294,17 +311,20 @@ h4{
 	}
 	.main-header{
 		height: 
-		90vh;
+		100vh;
 	}
 	h4, h3 {
 		font-size: 30px;
 	}
 }
+@media only screen and (max-width: 724px) {
+.main-header{
+		height: 
+		110vh;
+	}
+}
 
 @media only screen and (max-width: 600px) {
-	#watch{
-	display: none;
-}
 	.main-header-text{
 		top: 90px;
 	}
@@ -318,12 +338,15 @@ h4{
 		margin-top: 0px;
 	}
 	.main-header{
-		height: 100vh;
+		height: 125vh;
 	}
 }
 
 @media only screen and (max-width: 576px) {
-	.tab-content img{
+	#hidden-block{
+		display: none;
+	}
+	.section-work .tab-content img{
 		width: 80%;
 	}
 }
@@ -349,7 +372,13 @@ h4{
 
 @media only screen and (max-width: 442px) {
 	.main-header{
-		height: 110vh;
+		height: 135vh;
+	}
+}
+
+@media only screen and (max-width: 428px) {
+	.main-header{
+		height: 145vh;
 	}
 }
 
@@ -362,13 +391,6 @@ h4{
 	}
 }
 
-@media only screen and (max-width: 383px) {
-	.main-header{
-		height: 115vh;
-	}
-
-}
-
 @media only screen and (max-width: 337px) {
 	.section-work .nav{
 	margin-bottom: 10px;
@@ -377,6 +399,6 @@ h4{
 		width: 100%;
 	}
 	.main-header{
-		height: 120vh;
+		height: 155vh;
 	}
 }
