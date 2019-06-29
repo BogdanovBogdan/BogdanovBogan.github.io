@@ -1,3 +1,10 @@
+$(function(){
+
+	baguetteBox.run('.gallery');
+	
+})
+
+
 function onYouTubeIframeAPIReady() {
 	var iStatus;
 
