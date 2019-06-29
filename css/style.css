@@ -265,7 +265,6 @@ h4{
 	padding: 60px 0px;
 }
 .section-brand .brand-item:hover{
-	/* background-color: #41286A; */
 	box-shadow: 0 0 40px -10px rgba(0,0,0,.5);
 	transition: 0.5s;
 }
