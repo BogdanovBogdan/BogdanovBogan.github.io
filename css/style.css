@@ -273,6 +273,51 @@ h4{
 }
 
 
+/* =============== section-review ================ */
+
+.section-reviews{
+	background: url(../img/reviews_bg.jpg) center no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+.section-reviews .carousel-caption{
+	bottom: auto;
+	top: 5%;
+	text-align: left;
+}
+.section-reviews .blockquote{
+	font-style: italic;
+	font-size: 22px;
+	position: relative;
+	padding-left: 60px;
+	margin-top: 50px;
+}
+.section-reviews .blockquote::before{
+	content: '\201C';
+	color: #FA2369;
+	position: absolute;
+	font-size: 150px;
+	left: -20px;
+	top: -70px;
+}
+.section-reviews .blockquote-footer{
+	color: #fff;
+	font-style: normal;
+	position: relative;
+	margin-top: 25%;
+}
+.section-reviews .blockquote-footer::before{
+	font-size: 25px;
+	content: '\2605\2605\2605\2605\2605';
+	color: #FA2369;
+	font-style: normal;
+	position: absolute;
+	margin-top: -10%;
+}
+
+/* =============== section-* ================ */
+
 
 /* Large Devices, Wide screens */
 @media only screen and (max-width: 1360px) {
@@ -284,6 +329,25 @@ h4{
 
 /* Medium Devices, Desctops */
 @media only screen and (max-width: 991px) {
+	.section-reviews h4{
+		font-size: 34px;
+	}
+	.section-reviews h3{
+		font-size: 30px;	
+	}
+	.section-reviews .blockquote{
+		font-size: 18px;
+		margin-top: 35px;
+		margin-left: -25px;
+	}
+	.section-reviews .blockquote::before{
+		font-size: 100px;
+		margin-top: 25px;
+		left: 10px; 
+	}
+	.section-reviews .blockquote-footer::before{
+		font-size: 20px;
+	}
 	.navbar-nav{
 		background:  linear-gradient(45deg, rgba(235,27,51,1) 0%, rgba(68,46,130,1) 100%);
 		position: relative;
@@ -294,8 +358,39 @@ h4{
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+	.section-reviews .carousel-caption{
+		padding-top: 10px;
+		bottom: auto;
+		top: 0;
+		text-align: left;
+	}
+	.section-reviews h4{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.section-reviews h3{
+		font-size: 26px;
+	}
+	.section-reviews .carousel-inner .blockquote p{
+		height: 70px;
+		overflow: hidden;
+	}
+	.section-reviews .blockquote{
+		font-size: 100%;
+		margin-top: 30px;
+		margin-left: -25px;
+	}
+	.section-reviews .blockquote::before{
+		font-size: 80px;
+		margin-top: 35px;
+		left: 15px; 
+	}
+	.section-reviews .blockquote-footer::before{
+		font-size: 18px;
+		top: -5px;
+	}
 	.section-design .megaphone{
-	margin-top: 40px;
+		margin-top: 40px;
 	}
 	.section-progress h4{
 		margin-bottom: 10px;
@@ -345,18 +440,29 @@ h4{
 	#hidden-block{
 		display: none;
 	}
-	.section-work .tab-content img{
-		width: 80%;
+	.section-reviews .carousel-caption{
+		position: relative;
+		width: 70%;
+	}
+	.section-reviews .blockquote-footer{
+		top: -15px; 
+	}
+	.section-reviews .blockquote-footer::before{
+		font-size: 17px;
+		top: 7px;
 	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 461px) {
+	.section-reviews .blockquote-footer::before{
+		top: 4px;
+	}
 	.section-watch .tab-content .btn-shadow{
 	font-size: 11px;
 	padding: 6px 12px;
 	box-shadow: 0 5px 0px #FF5790;
-}
+	}
 	.section-tabs .nav-item .nav-link{
 		padding: 8px 16px;
 		font-size: 11px;
@@ -382,6 +488,9 @@ h4{
 }
 
 @media only screen and (max-width: 380px) {
+	.section-reviews .blockquote-footer::before{
+		top: 0;
+	}
 	.section-watch{
 		padding: 30px 0px;
 	}
