@@ -316,7 +316,57 @@ h4{
 	margin-top: -10%;
 }
 
-/* =============== section-* ================ */
+/* =============== section-form ================ */
+
+.section-form {
+	background: url(../img/form_bg.jpg) center no-repeat;
+	background-size: cover; 
+	padding: 50px 0;
+	color: #fff;
+}
+.section-form h4{
+	margin-bottom: 13px;
+}
+.section-form h5{
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+/* .section-form .s-form{
+	margin-top: 33px;
+} */
+.section-form form{
+	margin-top: 40px;
+}
+.section-form .form-control{
+	height: 51px;
+	border-radius: 8px;
+	background-color: rgba(255,255,255,.5);
+	color: #fff;
+	border: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 20px;
+}
+.section-form .form-control::placeholder{
+	color: #fff;
+}
+.section-form .form-control:focus{
+	box-shadow: 0 0 0 3px rgba(255,255,255,.25);
+}
+.section-form .btn-violet{
+	border-radius: 10px;
+	background-color: #4A2D7F;
+}
+.section-form .btn-shadow{
+	padding: 11px 26px;
+	box-shadow: 0 7px 0px #A881EB;
+	transition: all .4s;
+}
+.section-form .btn-shadow:hover{
+	box-shadow: 0 5px 0px #A881EB;	
+	background-color: #392363;
+}
 
 
 /* Large Devices, Wide screens */
@@ -412,7 +462,7 @@ h4{
 	}
 }
 @media only screen and (max-width: 724px) {
-.main-header{
+	.main-header{
 		height: 
 		110vh;
 	}
